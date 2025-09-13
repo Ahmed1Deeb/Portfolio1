@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: system-ui;
+    box-sizing: border-box;
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: orange;
+    z-index: 100;
+
+
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+
+
+}
+
+header ul li:hover {
+    background: rgba(255, 255, 255, 0.404);
+}
+
+header ul li {
+    width: 60px;
+    padding: 5px 10px;
+
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.2s;
+
+
+}
+
+header h1 {
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+}
+
+.menu {
+    display: none;
+}
+
+.uln {
+    display: none;
+}
+
+.content {
+    margin-top: 200px;
+    width: 12%;
+    margin-left: 10px;
+    align-items: center;
+    border-bottom: 2px solid black;
+    position: relative;
+    top: 47px;
+    transition: 0.5s;
+}
+
+.content h2 {
+    display: inline;
+}
+
+.content h1 {
+    display: inline;
+    color: #dc3545;
+    transition: 0.5s;
+
+}
+
+.Myname {
+    color: #dc3545;
+    font-family: system-ui;
+}
+
+.content2 {
+    margin-top: 0px;
+    width: 70%;
+}
+
+.content2 h2 {
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.content2 p {
+    font-weight: 500;
+    font-family: system-ui;
+    font-size: 16px;
+}
+
+
+/* @keyframes animate {
+
+    0% {
+        clip-path: polygon(0% 95%, 8% 95%, 15% 96%, 27% 96%, 34% 96%, 45% 95%, 54% 95%, 64% 95%, 72% 97%, 77% 94%, 84% 95%, 88% 96%, 95% 97%, 100% 98%, 3% 99%);
+
+    }
+
+    35% {
+        clip-path: polygon(97% 68%, 84% 68%, 68% 68%, 49% 68%, 10% 69%, 0 70%, 0% 100%, 100% 100%);
+    }
+
+    65% {
+        clip-path: polygon(100% 48%, 86% 48%, 75% 48%, 63% 48%, 53% 47%, 40% 47%, 29% 47%, 20% 47%, 14% 46%, 3% 46%, 0% 98%, 100% 98%);
+    }
+
+    85% {
+        clip-path: polygon(0% 24%, 15% 26%, 24% 24%, 35% 24%, 48% 26%, 60% 23%, 78% 25%, 93% 25%, 100% 25%, 100% 100%, 0% 100%);
+    }
+
+    100% {
+        clip-path: polygon(0% 1%, 99% 1%);
+    }
+} */
+
+.AboutMeLink {
+    width: 100%;
+    background: orange;
+    height: 500px;
+    position: absolute;
+    bottom: -300px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.clickOFContact {
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    background-color: orange;
+    border: 1px solid orange;
+    font-weight: bolder;
+    padding: 5px 10px;
+    margin-left: 10px;
+    position: absolute;
+    transition: 0.9s;
+    left: -100px;
+}
+
+.clickOFContact:hover {
+    background: none;
+    color: black;
+}
+.AboutMeLink span{
+    color: white;
+    font-size: large;
+}
+#facebook{
+    color: blue;
+}
+#whatsapp{
+    color: green;
+}
+#instagram{
+    color: purple;
+}
+@media (max-width: 473px) {
+    header{
+
+        position: fixed;
+    }
+    header ul {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        padding: 2px 2px;
+        margin-right: 10px;
+        transition: 0.5s;
+    }
+
+    .uln li {
+        transition: 0.5s;
+        padding: 4px 7px;
+        font-size: 13px;
+
+    }
+
+    .uln a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .uln li:hover {
+
+        text-decoration: underline purple;
+
+
+    }
+
+    .menu:hover {
+        border: 2px solid black;
+    }
+
+    .uln {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background: orange;
+        height: 300px;
+        border-bottom: 1px solid black;
+        position: fixed;
+        top: 35px;
+        width: 100%;
+        z-index: 999;
+    }
+
+
+    .uln li {
+        margin: 50px 0;
+        list-style: none;
+        font-weight: bolder;
+    }
+
+    .content {
+        width: 56%;
+    }
+
+    .content2 {
+        width: 80%;
+        margin-left: 10px;
+    }
+
+    .content2 h2 {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .hor {
+        display: flex;
+    }
+}
